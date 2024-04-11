@@ -48,10 +48,10 @@ void loop() {
 
     linha++; // incrementa a quantidade de linhas (leitura)
 
-    // verifica se é maior que 100 linhas 
-    if(linha > 2){
+    // verifica se é maior que 50 linhas 
+    if(linha > 50){
         Serial.flush(); // Limpa o console
-        linha = 0; // se sim, volta do 0, para limitar a leitura para apenas as ultimas 100 leituras (100 linhas)
+        linha = 0; // se sim, volta do 0, para limitar a leitura para apenas as ultimas 50 leituras (50 linhas)
     }
-    delay (1000); //Tempo 1 seg para realizar a próxima leitura;=
+    delay (1000); //Tempo 1 seg para realizar a próxima leitura;
 }
